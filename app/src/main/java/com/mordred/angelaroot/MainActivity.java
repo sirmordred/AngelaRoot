@@ -2,7 +2,9 @@ package com.mordred.angelaroot;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.AsyncTask;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -89,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
                 }.execute();
             }
         });
+
+        informUser();
     }
 
     public void doTheMagic() {
@@ -158,6 +162,19 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void informUser() {
+        new AlertDialog.Builder(MainActivity.this)
+                .setTitle("INFO")
+                .setMessage("This app will root your phone \"temporarily\" , Root access will be lost after reboot, so if you want to get root access after reboot you need to do same steps(after every reboot) \"I'm currently working on \"Persisten Root\" solution so stay tuned :)")
+                .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .show();
     }
 
     private void copyFromAsset(Context ct, String fileName, String targetPath) {
