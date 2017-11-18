@@ -196,6 +196,7 @@ public class MainActivity extends AppCompatActivity {
                 "echo \"info: angelaroot_starter.sh STEP1 begin\"\n" +
                 "\n" +
                 "am start -n com.android.engineeringmode/.qualcomm.DiagEnabled --es \"code\" \"angela\"\n" +
+                "am force-stop com.android.engineeringmode\n" +
                 "echo \"Ok, STEP1 is completed, let's do STEP2\"";
     }
 
