@@ -15,7 +15,7 @@ Some articles/news about the vulnerabiltiy:
 
 AngelaRoot App Info:
 
-Download: http://www.mediafire.com/file/nm7x9zitvvzfuy5/AngelaRootV4.apk
+Download: https://drive.google.com/open?id=10T8Ac3OrFzd2o7f37AuaVfhbBOAcHtY3
 
 Developed by @sirmordred Oguzhan Yigit
 
